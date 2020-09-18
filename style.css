@@ -23,6 +23,37 @@ light purple 159 159 202  #9F9FCA
                     font-size: 1rem;
                 }
                 
+                @media (min-width: 544px) {
+                    h3 {
+                        font-size: 0.7rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+                
+                @media (min-width: 768px) {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /* Large devices (desktops, 992px and up) */
+                
+                @media (min-width: 992px) {
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                /* Extra large devices (large desktops, 1200px and up) */
+                
+                @media (min-width: 1200px) {
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    /*1rem = 16px*/
+                }
+                
                 li.nav-item.dropdown:hover {
                     background-color: #c29e2e;
                 }
@@ -58,6 +89,11 @@ light purple 159 159 202  #9F9FCA
                     }
                 }
                 /*Jumbotraon with Background main Banner and SearchBox*/
+                
+                .jumbotron {
+                    margin-bottom: 0;
+                    padding-top: 0;
+                }
                 
                 .jumbotron-image {
                     position: relative;
@@ -144,112 +180,31 @@ light purple 159 159 202  #9F9FCA
                         align-content: center !important;
                     }
                 }
-                /* card group aka PRIMARY */
+                /* Book Carousel */
                 
-                .card-group .card-primary:hover {
-                    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
-                    z-index: 100;
+                .slick-contents {
+                    width: 211px;
+                    outline: none;
+                    box-sizing: border-box;
                 }
                 
-                .card-group .card-primary:hover .card-title {
-                    color: #004C93;
+                .slick-book-item {
+                    position: relative;
+                    width: 211px;
+                    height: 200px;
+                    overflow: hidden;
+                    /* border: 1px solid black; */
                 }
                 
-                .card-group .card-primary .card-img-top {
-                    width: 264px;
-                    height: 264px;
-                    margin: 80px auto 32px;
+                .slick-book-item img {
+                    position: absolute;
+                    overflow: hidden;
                 }
                 
-                .card-group .card-primary .card-body>.badge {
-                    margin-bottom: 24px;
+                .slick-item-info {
+                    width: 211px;
                 }
-                
-                .card-group .card-primary .card-body {
-                    padding: 0 32px;
-                }
-                
-                .card-group .card-primary .card-title {
-                    color: #004C93;
-                    font-size: 26px;
-                    line-height: 1.54;
-                    font-weight: 900;
-                    margin-bottom: 24px;
-                }
-                
-                .card-group .card-primary .card-text {
-                    color: #004C93;
-                    font-size: 16px;
-                    line-height: 1.5;
-                    font-weight: 400;
-                }
-                
-                .card-group .card-primary .card-footer {
-                    padding: 48px 0 56px;
-                    background: transparent;
-                    border: 0;
-                }
-                /* card Awards*/
-                
-                .awards-container {
-                    background-image: linear-gradient(to bottom, #004C93 2%, #004C93);
-                    margin: 0 -30px;
-                    padding: 30px;
-                }
-                
-                .awards-container h2 {
-                    color: #fff;
-                }
-                
-                .card-deck>.card-awards {
-                    padding: 32px 32px 0;
-                    margin: 16px;
-                    border-radius: 0;
-                    background: transparent;
-                }
-                
-                .card-deck .card-awards:hover {
-                    box-shadow: 0 40px 60px -20px rgba(8, 4, 43, 0.8);
-                    background-color: #CAA500;
-                }
-                
-                .card-deck .card-awards:hover .card-footer .btn {
-                    visibility: visible;
-                }
-                
-                .card-deck>.card-awards .card-body {
-                    padding: 0;
-                }
-                
-                .card-deck>.card-awards .card-img-top {
-                    margin-bottom: 24px;
-                    border-radius: 0px;
-                    height: 80px;
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .card-deck .card-awards .card-img-top img {
-                    margin: auto;
-                }
-                
-                .card-deck .card-awards .card-title {
-                    color: #fff;
-                    font-size: 16px;
-                    line-height: 1.5;
-                    font-weight: 400;
-                    margin-bottom: 3px;
-                }
-                
-                .card-deck .card-awards .card-footer {
-                    padding: 9px 0 13px;
-                    border: 0;
-                }
-                
-                .card-deck .card-awards .card-footer .btn {
-                    color: #004C93;
-                    visibility: hidden;
-                }
+                /* Book Carousel */
                 /* Footer */
                 
                 ul>li>a {
